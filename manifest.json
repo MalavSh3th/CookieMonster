@@ -1,0 +1,15 @@
+{
+  "name": "Cookie Monster",
+  "description": "Scan cookies on any website and generate a secure report.",
+  "version": "1.3",
+  "manifest_version": 3,
+  "permissions": ["cookies", "tabs", "storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
