@@ -1,4 +1,6 @@
 Chrome extension that scans cookies, detects privacy risks, and helps you manage them securely.
+THIS IS SOLELY A TESTING MODULE
+
 
 Features
 
