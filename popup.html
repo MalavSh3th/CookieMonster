@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Cookie Monster</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Cookie Monster</h1>
-  <div id="results"></div>
-  <button id="download-csv">Download CSV</button>
+  <header class="app-header">
+    <img src="icon.png" class="logo" alt="">
+    <div>
+      <h1>Cookie Monster</h1>
+      <div id="site-name" class="site-name">Scanning…</div>
+    </div>
+  </header>
+
+  <div id="status" class="status" hidden></div>
+
+  <section id="score-section" class="score-section" hidden>
+    <div id="score-circle" class="score-circle"><span id="score-value">--</span></div>
+    <div class="score-details">
+      <div id="score-label">Privacy Score</div>
+      <div id="score-summary" class="score-summary"></div>
+    </div>
+  </section>
+
+  <section id="controls" class="controls" hidden>
+    <div class="filter-chips">
+      <button type="button" class="chip active" data-filter="all">All</button>
+      <button type="button" class="chip" data-filter="High">High Risk</button>
+      <button type="button" class="chip" data-filter="Medium">Medium</button>
+      <button type="button" class="chip" data-filter="Low">Low Risk</button>
+    </div>
+    <input type="text" id="search" placeholder="Search cookies by name…">
+  </section>
+
+  <div id="cookie-list" class="cookie-list"></div>
+
+  <footer id="actions" class="actions" hidden>
+    <button type="button" id="delete-high-risk" class="btn danger">Delete High-Risk</button>
+    <button type="button" id="download-csv" class="btn">Export CSV</button>
+  </footer>
+
   <script src="cookieDescriptions.js"></script>
   <script src="cookieDatabase.js"></script>
   <script src="popup.js"></script>
