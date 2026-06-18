@@ -1,17 +1,18 @@
 Chrome extension that scans cookies, detects privacy risks, and helps you manage them securely.
+
 THIS IS SOLELY A TESTING MODULE
 
 
 Features
 
-    1)  Cookie Scanning – Reads cookies from the active tab and evaluates their security attributes (Secure, HttpOnly, SameSite).
-    2)  Risk Analysis – Flags cookies as High Risk or Low Risk based on security configuration.
-    3)  Cookie Privacy Score – Generates an overall score (0–100) reflecting website cookie safety
-    4)  Smart Descriptions – Identifies common cookies (Google Analytics, Facebook Pixel, AdRoll, etc.) and explains their purpose
-    5)  Automated Recommendations – Suggests improvements (e.g., “Add Secure flag”) for each cookie.
-    6)  Export Reports – Download a full cookie risk report as CSV for auditing
-    7)  Cookie Deletion – Delete risky cookies directly from the extension UI
-    8)  User-Friendly UI – Clean popup interface with color-coded risk levels
+    1)  Works on any site – click the toolbar icon on any open tab to scan its cookies.
+    2)  Where it's stored – shows each cookie's domain, path, and whether it's a session or persistent cookie (with expiry date).
+    3)  What it does to your data – looks up known trackers/services (Google Analytics, Meta Pixel, HubSpot, AdRoll, etc.) and explains the cookie's purpose and provider, with a heuristic fallback for unrecognized cookies.
+    4)  Risk scoring – scores each cookie 0–100 from Secure/HttpOnly/SameSite flags, expiry length, domain scope, and tracker category, with a plain-English reason list and an overall site Privacy Score.
+    5)  One-click delete – delete an individual cookie, or bulk-delete all High-Risk cookies at once.
+    6)  Filter & search – filter the list by risk level or search by cookie name.
+    7)  Export Reports – download a full cookie risk report as CSV for auditing.
+    8)  User-Friendly UI – color-coded, expandable cards with a privacy score summary.
 
 Tech Used
 
